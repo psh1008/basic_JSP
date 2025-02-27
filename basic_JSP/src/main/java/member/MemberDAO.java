@@ -59,6 +59,15 @@ public class MemberDAO {
 		return data;
 	}
 	
+	public String getMemberContent(int num) {
+		int idx = num-1;
+		String data="";
+		
+		data+= "<h3>"+list.get(idx).getId()+"</h3>";
+		
+		return data;
+	}
+	
 	public int loginAccept(String id,String pw) {
 		
 		for(int i=0;i<list.size();i++) {
